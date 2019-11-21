@@ -6,3 +6,5 @@ The benefits of designing this system are:
 
 Fuzzy Tsukamoto method is used to help carry out the right planning optimally, and is expected to facilitate the granting of a more precise, easy, and effective assessment in the financial system design process.
 
+# Flow Fuzzy Tsukamoto
+![alt text](https://github.com/supra-yogi/mobile-planer/blob/master/Flowchart.PNG)
