@@ -30,3 +30,6 @@ Rate = Interest Rate <br>
 Fv = Savings that you want to achieve <br>
 Pv = Existing savings <br>
 Nper = Many Annuities / Duration <br>
+
+# Activity Diagram
+![alt text](https://github.com/supra-yogi/mobile-planer/blob/master/Activity%20Diagram.jpg) <br>
