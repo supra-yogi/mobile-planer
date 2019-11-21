@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Mobile Planner</string>
+    <string name="title_activity_main_menu">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_title">Welcome to Mobile Planner</string>
+    <string name="welcome_description1">
+        <i>A goal without a plan is just a wish.</i>
+    </string>
+    <string name="welcome_description2">
+        <i>Good luck is the result of good planning.</i>
+    </string>
+    <string name="welcome_description3">
+        By failing to prepare, you are preparing to fail.
+    </string>
+    <string name="about">
+        Aplikasi mobile planner merupakan aplikasi perencanaan keuangan yang bertujuan untuk
+        membantu pengguna dalam merencanakan perenccanaanya.
+        Serta membuat simulasi tabungan agar perencanaan tersebut dapat tercapai dengan tepat.
+    </string>
+    <string name="inflasi">
+        Proses meningkatnya harga-harga secara umum dan terus-menerus (continue)
+        berkaitan dengan mekanisme pasar.
+    </string>
+    <string name="lumpsum">
+        Lumpsum adalah istilah keuangan yang berarti pembayaran yang dilakukan
+        sekaligus dalam satu waktu saja.
+    </string>
+    <string name="batasan">
+        Batasan adalah pandangan pakar ekonomi tentang faktor-faktor yang mempengaruhi dalam menentukan
+        prioritas perencanaan yang dilihat secara umum.
+    </string>
+    <string name="rincianTabungan"><u>Tabungan Rencana Anda</u></string>
+    <string name="targetdana">Target dana (?)</string>
+    <string name="tabunganBersih">Tabungan bersih (?)</string>
+</resources>

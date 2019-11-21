@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skripsi.yogi.planner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_round"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_circle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".UI.WelcomeActivity"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.NoConnectionActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".UI.LoginActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".UI.RegisterActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".UI.ForgetPasswordActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".UI.MainMenuActivity"
+            android:label="@string/title_activity_main_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".UI.PlanningActivity"
+            android:label="Add Planning"/>
+        <activity
+            android:name=".UI.EditPlanningActivity"
+            android:label="Edit Planning"/>
+        <activity
+            android:name=".UI.DetailPlanningActivity"
+            android:label="Detail Planning"/>
+        <activity
+            android:name=".UI.ListPriorityPlanningActivity"
+            android:label="List Prioritas"/>
+        <activity
+            android:name=".UI.DetailMonthlyInvestActivity"
+            android:screenOrientation="landscape"
+            android:label="Rincian Tabungan"/>
+
+        <activity
+            android:name=".UI.AccountActivity"
+            android:label="Account" />
+        <activity
+            android:name=".UI.BatasanActivity"
+            android:label="Batasan"/>
+
+        <activity
+            android:name=".UI.HelpActivity"
+            android:label="Help"/>
+        <activity
+            android:name=".UI.IntroductionActivity"
+            android:label="Introduction"/>
+        <activity
+            android:name=".UI.DeveloperActivity"
+            android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".UI.AppInfoActivity"
+            android:theme="@style/NoActionBar"/>
+    </application>
+
+</manifest>

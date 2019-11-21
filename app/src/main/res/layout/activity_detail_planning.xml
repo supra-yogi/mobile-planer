@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    tools:context=".UI.DetailPlanningActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="false"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal planning : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/createdDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMidnightBlue"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Planning kamu adalah :"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/goalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMidnightBlue"
+                android:padding="4dp"
+                android:text="-"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Jangka waktu :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/jangkaWaktu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMidnightBlue"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text=" bulan"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Biaya planning yang ingin dicapai :"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/currentCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMidnightBlue"
+                android:padding="4dp"
+                android:text="-"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Biaya planning setelah"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/jangkaWaktu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMidnightBlue"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="2"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text=" bulan "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/futureCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorMidnightBlue"
+                android:padding="4dp"
+                android:text="-"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Tabungan yang sudah ada :"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/alreadyInvest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMidnightBlue"
+                android:padding="4dp"
+                android:text="-"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Biaya admin bank per bulan :"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/biayaAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMidnightBlue"
+                android:padding="4dp"
+                android:text="-"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Rate inflasi (%) : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/inflationRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMidnightBlue"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Bunga bank per tahun (%) : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/interestRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMidnightBlue"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Pajak bunga bank (%) : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/pajakBunga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMidnightBlue"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Skala kebutuhan (1-10) : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/requiredRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMidnightBlue"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Uang untuk ditabung setiap bulan :"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/monthlyInvest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMidnightBlue"
+                android:padding="4dp"
+                android:text="-"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Lumpsum :"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/lumpsum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMidnightBlue"
+                android:padding="4dp"
+                android:text="-"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRincian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_shape_button"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:onClick="onShowDetailMonthlyInvest"
+                android:text="Show More"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

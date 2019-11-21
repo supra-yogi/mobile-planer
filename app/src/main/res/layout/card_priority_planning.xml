@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorCard"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/icon_plan" />
+
+            <TextView
+                android:id="@+id/txtGoalName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgIcon"
+                android:text="Goal Name"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/txtDescPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtGoalName"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgIcon"
+                android:textColor="@color/colorWhite"
+                android:text="Prioritas : "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtGoalName"
+                android:layout_toRightOf="@id/txtDescPriority"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDescRecommendation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescPriority"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgIcon"
+                android:textColor="@color/colorWhite"
+                android:text="Rekomendasi (fuzzy) : "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtRecommendation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPriority"
+                android:layout_toRightOf="@id/txtDescRecommendation"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="67"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

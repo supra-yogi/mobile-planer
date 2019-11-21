@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    tools:context=".UI.DetailMonthlyInvestActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TableRow
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rincianTabungan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/txtTarget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/targetdana"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bunga per tahun (%)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/bunga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Biaya administrasi bank"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/biayaAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pajak bunga bank (%)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/pajakBunga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tabungan yang sudah ada"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/alreadyInvest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Setoran bulanan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/monthlyInvest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jangka waktu (bulan)"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/jangkaWaktu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorMidnightBlue">
+
+                    <TextView
+                        android:id="@+id/thBulan"
+                        android:background="@drawable/cellborder"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Bulan"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/thTabunganAwal"
+                        android:background="@drawable/cellborder"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Tabungan Awal"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/thSetoranBulanan"
+                        android:background="@drawable/cellborder"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Setoran Bulanan"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/thBunga"
+                        android:background="@drawable/cellborder"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Bunga"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/thPajak"
+                        android:background="@drawable/cellborder"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Pajak"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/thTabunganAkhir"
+                        android:background="@drawable/cellborder"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Tabungan Akhir"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total bunga"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/totalBunga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total kena pajak bunga bank"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/totalPajakBunga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total biaya administrasi bank"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/totalBiayaAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/txtTabunganBersih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tabunganBersih"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tabunganBersih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Simulasi ini hanya perkiraan saja, tiap bank mungkin mempunyai hasil simulasi yang berbeda." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Tabungan bersih merupakan tabungan yang anda dapatkan jika secara terus-menerus melakukan setoran bulanan selama jangka waktu yang telah ditentukan." />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".UI.BatasanActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jangka Waktu (bulan)"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Cepat"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="From : "
+                    />
+
+                <EditText
+                    android:id="@+id/waktuCepatFrom"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:text="To : "
+                    />
+                <EditText
+                    android:id="@+id/waktuCepatTo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="Lama"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="From : "
+                    />
+
+                <EditText
+                    android:id="@+id/waktuLamaFrom"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:text="To : "
+                    />
+                <EditText
+                    android:id="@+id/waktuLamaTo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biaya Perencanaan"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Rendah"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="From : "
+                    />
+
+                <EditText
+                    android:id="@+id/biayaRendahFrom"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:text="To : "
+                    />
+                <EditText
+                    android:id="@+id/biayaRendahTo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Sedang"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="From : "
+                    />
+
+                <EditText
+                    android:id="@+id/biayaSedangFrom"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:text="To : "
+                    />
+                <EditText
+                    android:id="@+id/biayaSedangTo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Tinggi"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="From : "
+                    />
+
+                <EditText
+                    android:id="@+id/biayaTinggiFrom"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:text="To : "
+                    />
+                <EditText
+                    android:id="@+id/biayaTinggiTo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skala Kebutuhan"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Rendah"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="From : "
+                    />
+
+                <EditText
+                    android:id="@+id/kebutuhanRendahFrom"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:text="To : "
+                    />
+                <EditText
+                    android:id="@+id/kebutuhanRendahTo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Tinggi"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="From : "
+                    />
+
+                <EditText
+                    android:id="@+id/kebutuhanTinggiFrom"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:text="To : "
+                    />
+                <EditText
+                    android:id="@+id/kebutuhanTinggiTo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:padding="5dp"
+                    android:textAlignment="textEnd"
+                    android:enabled="false"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

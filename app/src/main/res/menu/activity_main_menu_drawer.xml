@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_listPriority"
+            android:icon="@drawable/ic_format_list_numbered_black_24dp"
+            android:title="List Prioritas" />
+    </group>
+
+    <item android:title="Settings"
+          android:icon="@drawable/ic_menu_manage">
+        <menu>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_account_box_black_24dp"
+                android:title="Account" />
+            <item
+                android:id="@+id/nav_batasan"
+                android:icon="@drawable/ic_settings_applications_black_24dp"
+                android:title="Batasan" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>
